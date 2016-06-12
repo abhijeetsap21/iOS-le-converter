@@ -17,21 +17,21 @@
             if(toIndex == 1) {
                 value/=1000;
             } else if (toIndex == 2) {
-                value*=0.0328;
+                value*=10,763,910;
             }
             break;
         case 1:
             if(toIndex == 0) {
                 value*=1000;
             } else if (toIndex == 2) {
-                value*=3.28;
+                value*=10.7639;
             }
             break;
         case 2://foot
             if(toIndex == 0) {
-                value*=0.0003048;
+                value*=0.0009;
             } else if (toIndex == 1) {
-                value/=3.28;
+                value*=09290;
             }
             break;
     }
@@ -44,11 +44,11 @@
     switch (fromIndex) {
         case 0:
             if(toIndex == 1) {
-                value/=1000;
+                value*=0.001;
             } else if (toIndex == 2) {
-                value*=0.0328;
+                value*=0.00062;
             } else if (toIndex == 3) {
-                value*=0.6214;
+                value*=3.28;
             }
             break;
         case 1:
@@ -62,20 +62,20 @@
             break;
         case 2:
             if(toIndex == 0) {
-                value*=0.0003048;
+                value*=1609.34;
             } else if (toIndex == 1) {
-                value*=0.3048;
+                value*=1.6;
             } else if (toIndex == 3) {
-                value*=0.00019;
+                value*=5280;
             }
             break;
         case 3:
             if(toIndex == 0) {
-                value*=1.61;
+                value*=0.30;
             } else if (toIndex == 1) {
-                value*=0.00161;
+                value*=0.00034;
             } else if (toIndex == 2) {
-                value*=5280;
+                value*=.0018;
             }
             break;
     }
@@ -102,7 +102,7 @@
             if(toIndex == 0) {
                 value= value - 273;
             } else if (toIndex == 1) {
-                value= value* (9/5) - 459.67;
+                value= (value - 273) * 1.8 ) + 32;
             }
             break;
     }
